@@ -4,11 +4,10 @@ title: Blog
 ---
 <h1>Latest Posts</h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
+{% for post in site.posts %}
+  <div id="content_box" style="padding-left:1em;padding-right:1em;border:1px solid black;">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt }}</p>
-    </li>
+  </div>
+  <br/>
   {% endfor %}
-</ul>
