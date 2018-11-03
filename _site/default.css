@@ -1,8 +1,23 @@
-#topbar a{
-    padding-left: 10px;
+html {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+   #font-family: "Courier New", Courier, monospace;
 }
-a{
+p {
+    text-align:justify;
+} 
+div {
+    background-color:white;
+}
+body{
+    background-color:lightblue;
+}
+#topbar, #topbar a{
+    padding-left: 10px;
+    opacity:.80;
+}
+a, a:visited{
     text-decoration:none;
+    color:blue;
 }
 #topbar {
     border-bottom: 1px solid black
@@ -10,6 +25,7 @@ a{
 #content_box_container{
     display:inline-block;
     border: 1px solid black;
+    float:left;
 }
 #content_box{
     text-align:left;
@@ -25,4 +41,12 @@ a{
     position:fixed;
     left: 0;
     bottom: 0;
+}
+#newest_post_container {
+    border: 1px solid black;
+    float:left;
+    display:inline-block;
+    width: 85%;
+    padding-right: 1em;
+    padding-left: 1em;
 }
