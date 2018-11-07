@@ -1,0 +1,10 @@
+---
+layout:default
+title:Software
+---
+<div id="content_wrapper">
+  <div id="content_box">
+    <h1>This is a list of my software I consider finished or at least useable.</h1>
+    <h4>Tools</h4>
+    <ul>
+      <li><a href="">LARP</a>-Software specifically for plotting linear regressions. Requires <a href="">Gnuplot</a>.</li>

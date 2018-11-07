@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div id="content_wrapper">
+  <h1>{{ page.tag | capitalize }}</h1> {{ page.tagdesc }}
+</div>
+<br/>
+{% for post in site.tags[page.tag] %}
+<div id="content_wrapper">
+  <div id="content_box" style="padding-left:1em;padding-right:1em;border:1px solid black;">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+  </div>
+</div>
+<br/>
+{% endfor %}

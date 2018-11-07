@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<!-- thanks to https://dev.to/rpalo/jekyll-tags-the-easy-way -->
+ {% for post in site.tags[page.tag] %}
+<div id="content_wrapper">
+  <div id="content_box" style="padding-left:1em;padding-right:1em;border:1px solid black;">
+    {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+  </div>
+</div>
+{% endfor %}

@@ -2,11 +2,21 @@
 layout: default
 title: Blog
 ---
-<br/><br/>
+<br/>
+<div id="content_wrapper">
+  <div id="content_box">
+    {% for tag in site.tags %}
+    <a href="/tags/{{ tag[0] }}.html">{{ tag[0] }}</a> ||
+    {% endfor %}
+  </div>
+</div>
 {% for post in site.posts %}
 <div id="content_wrapper">
   <div id="content_box" style="padding-left:1em;padding-right:1em;border:1px solid black;">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {% for tag in post.tags %}
+      <a href="/tags/{{ tag }}.html">{{ tag }}</a>&nbsp;
+      {% endfor %}
       <p>{{ post.excerpt }}</p>
   </div>
 </div>
