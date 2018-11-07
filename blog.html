@@ -6,7 +6,7 @@ title: Blog
 <div id="content_wrapper">
   <div id="content_box">
     {% for tag in site.tags %}
-    <a href="/tags/{{ tag[0] }}.html">{{ tag[0] }}</a> ||
+    <a href="/tags/{{ tag[0] }}.html">{{ tag[0] }}</a>({{ tag[1] | size  }}) ||
     {% endfor %}
   </div>
 </div>
